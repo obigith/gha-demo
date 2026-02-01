@@ -6,13 +6,14 @@ on:
         description: Choose the environment to deploy
         required: true
         default: dev
+        type: choice
         options:
           - dev
           - test
           - prod
       artifact_tag:
-          description: Choose the git tag to deploy
-          required: true
+         description: Choose the git tag to deploy
+         required: true
    jobs:
      inputs-demo:
        runs-on: ubuntu-latest
