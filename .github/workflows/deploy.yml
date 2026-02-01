@@ -14,7 +14,7 @@ jobs:
           aws-region: us-east-1
       - name: Code static code to S3
         run: |
-          aws s3 sync ./ s3://obi-jhc-gha-static-website-demo/ \
+          aws s3 sync ./ s3://obi-gha-static-website-demo/ \
           --exclude "*" \
           --include "index.html"
           
