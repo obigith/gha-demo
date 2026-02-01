@@ -4,7 +4,22 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-    - name: Hello step
-      run: |
-        echo "This is line one"
-        echo "This is line two"
+      - name: Hello step
+        run: |
+          echo "This is line one"
+          echo "This is line two"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Step
+        run: echo "A demo build"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Phase
+        run: echo "Running test cases"
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy the App
+        run: echo "Deploying the app"
