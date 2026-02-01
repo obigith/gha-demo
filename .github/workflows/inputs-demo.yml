@@ -11,8 +11,8 @@ on:
           - test
           - prod
       artifact_tag:
-        description: Choose the git tag to deploy
-        required: true
+          description: Choose the git tag to deploy
+          required: true
    jobs:
      inputs-demo:
        runs-on: ubuntu-latest
