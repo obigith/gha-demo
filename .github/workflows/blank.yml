@@ -10,16 +10,19 @@ jobs:
           echo "This is line two"
   build:
     runs-on: ubuntu-latest
+    needs: hello
     steps:
       - name: Build Step
         run: echo "A demo build"
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Test Phase
         run: echo "Running test cases"
   Deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Deploy the App
         run: echo "Deploying the app"
