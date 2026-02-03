@@ -6,7 +6,7 @@ on:
       - synchronize
 jobs:
   build:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Build steps
-      run: echo "Building the application"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build step
+        run: echo "Building the application"
