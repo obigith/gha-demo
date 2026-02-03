@@ -9,7 +9,7 @@ jobs:
       - name: Build Step
         id: step1
         run: echo "version=0.0.1" >> $GITHUB_OUTPUT
-    deploy:
+  deploy:
       needs: build
       runs-on: ubuntu-latest
       steps:
